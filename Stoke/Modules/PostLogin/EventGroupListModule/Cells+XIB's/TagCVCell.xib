@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProText-Medium.ttf">
+            <string>SFProText-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TagCVCell" id="gTV-IL-0wX" customClass="TagCVCell" customModule="Stoke" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VbT-Xd-1bv">
+                        <rect key="frame" x="1" y="1" width="148" height="28"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="INDIA-vs-ENGLAND" translatesAutoresizingMaskIntoConstraints="NO" id="ONf-aN-XDq">
+                                <rect key="frame" x="4" y="4" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ONf-aN-XDq" secondAttribute="height" multiplier="1:1" id="7OL-0k-3Pt"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bookmark_active" translatesAutoresizingMaskIntoConstraints="NO" id="Rqn-yj-0k1">
+                                <rect key="frame" x="124" y="4" width="12" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12" id="glR-dv-651"/>
+                                    <constraint firstAttribute="height" constant="20" id="rRs-in-UAY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0j-Xd-UmF">
+                                <rect key="frame" x="34" y="6" width="80" height="16"/>
+                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="13"/>
+                                <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ONf-aN-XDq" firstAttribute="centerY" secondItem="VbT-Xd-1bv" secondAttribute="centerY" id="7gr-qT-5zp"/>
+                            <constraint firstItem="Rqn-yj-0k1" firstAttribute="leading" secondItem="H0j-Xd-UmF" secondAttribute="trailing" constant="10" id="ESM-eo-PSg"/>
+                            <constraint firstAttribute="bottom" secondItem="ONf-aN-XDq" secondAttribute="bottom" constant="4" id="Ff2-ee-VnQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Rqn-yj-0k1" secondAttribute="trailing" constant="12" id="XRE-F4-jaX"/>
+                            <constraint firstItem="ONf-aN-XDq" firstAttribute="leading" secondItem="VbT-Xd-1bv" secondAttribute="leading" constant="4" id="ZmN-vl-OSD"/>
+                            <constraint firstItem="Rqn-yj-0k1" firstAttribute="centerY" secondItem="VbT-Xd-1bv" secondAttribute="centerY" id="cZb-zu-DSv"/>
+                            <constraint firstItem="H0j-Xd-UmF" firstAttribute="leading" secondItem="ONf-aN-XDq" secondAttribute="trailing" constant="10" id="qru-mY-KE2"/>
+                            <constraint firstItem="H0j-Xd-UmF" firstAttribute="centerY" secondItem="ONf-aN-XDq" secondAttribute="centerY" id="tGH-Hh-5H1"/>
+                            <constraint firstItem="ONf-aN-XDq" firstAttribute="top" secondItem="VbT-Xd-1bv" secondAttribute="top" constant="4" id="ubN-rC-XuU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="VbT-Xd-1bv" secondAttribute="trailing" constant="1" id="2s7-Ev-E1K"/>
+                <constraint firstAttribute="bottom" secondItem="VbT-Xd-1bv" secondAttribute="bottom" constant="1" id="Lp6-FD-am6"/>
+                <constraint firstItem="VbT-Xd-1bv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="1" id="RhB-V8-izL"/>
+                <constraint firstItem="VbT-Xd-1bv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="d6U-lD-a9I"/>
+            </constraints>
+            <size key="customSize" width="349" height="34"/>
+            <connections>
+                <outlet property="bgView" destination="VbT-Xd-1bv" id="Am6-Uf-KaA"/>
+                <outlet property="bookMarkIMView" destination="Rqn-yj-0k1" id="w0F-Ld-fkG"/>
+                <outlet property="tagImView" destination="ONf-aN-XDq" id="b7C-Kn-x9i"/>
+                <outlet property="tagName" destination="H0j-Xd-UmF" id="L43-yU-uKc"/>
+            </connections>
+            <point key="canvasLocation" x="155.79710144927537" y="38.839285714285715"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="INDIA-vs-ENGLAND" width="400" height="222"/>
+        <image name="ic_bookmark_active" width="12" height="19"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProText-Regular.ttf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CommnetReactionTVCell" rowHeight="160" id="KGk-i7-Jjw" customClass="CommnetReactionTVCell" customModule="Stoke" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="418" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="418" height="160"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cYT-bg-bps">
+                        <rect key="frame" x="70" y="0.0" width="328" height="17.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXg-5w-4Xu">
+                                <rect key="frame" x="0.0" y="0.0" width="78.5" height="17.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="kz5-X8-Phh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
+                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="44" image="ic-like-inactive">
+                                    <color key="titleColor" red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="reationsTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Lwz-AS-noC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIC-P5-Sio">
+                                <rect key="frame" x="83.5" y="0.0" width="78" height="17.5"/>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
+                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="44" image="dislike-inactive">
+                                    <color key="titleColor" red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="reationsTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Uau-nv-Hsg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFm-SL-knd">
+                                <rect key="frame" x="166.5" y="0.0" width="78.5" height="17.5"/>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
+                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="44" image="exclamation-inactive">
+                                    <color key="titleColor" red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="reationsTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Daj-Um-BE7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xh9-yH-ztE">
+                                <rect key="frame" x="250" y="0.0" width="78" height="17.5"/>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
+                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="44" image="laugh-inactive">
+                                    <color key="titleColor" red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="reationsTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="llI-oQ-TFj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N0n-LF-2dV">
+                        <rect key="frame" x="16" y="26.5" width="390" height="1"/>
+                        <color key="backgroundColor" red="0.78823529411764703" green="0.78823529411764703" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="l2V-VQ-pcM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="N0n-LF-2dV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="8wX-Di-Z0b"/>
+                    <constraint firstAttribute="bottom" secondItem="N0n-LF-2dV" secondAttribute="bottom" id="9AO-nJ-B0Q"/>
+                    <constraint firstAttribute="trailing" secondItem="N0n-LF-2dV" secondAttribute="trailing" constant="12" id="Ppe-4T-19f"/>
+                    <constraint firstAttribute="trailing" secondItem="cYT-bg-bps" secondAttribute="trailing" constant="20" id="Q59-cN-gce"/>
+                    <constraint firstItem="cYT-bg-bps" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="e5S-Gt-Djb"/>
+                    <constraint firstAttribute="bottom" secondItem="cYT-bg-bps" secondAttribute="bottom" constant="10" id="r8o-l9-6US"/>
+                    <constraint firstItem="cYT-bg-bps" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="70" id="rFK-2U-G9b"/>
+                    <constraint firstItem="N0n-LF-2dV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="cYT-bg-bps" secondAttribute="bottom" id="rcX-0e-TbU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="buttonStackBottomHeight" destination="r8o-l9-6US" id="ex6-lx-8Rn"/>
+                <outlet property="dislikeBtn" destination="mIC-P5-Sio" id="Mfj-fY-Xfs"/>
+                <outlet property="exclimationBtn" destination="aFm-SL-knd" id="2E1-lN-YsR"/>
+                <outlet property="laughBtn" destination="Xh9-yH-ztE" id="lBA-Cv-GIi"/>
+                <outlet property="likeBtn" destination="OXg-5w-4Xu" id="pKh-dA-kfR"/>
+                <outlet property="reactionsLedingConstant" destination="rFK-2U-G9b" id="7Hh-Sf-skf"/>
+                <outlet property="saperatorLine" destination="N0n-LF-2dV" id="WHQ-kr-IJn"/>
+            </connections>
+            <point key="canvasLocation" x="111.59420289855073" y="147.32142857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dislike-inactive" width="15.5" height="15"/>
+        <image name="exclamation-inactive" width="12.5" height="16.5"/>
+        <image name="ic-like-inactive" width="15.5" height="15"/>
+        <image name="laugh-inactive" width="18.5" height="17.5"/>
+    </resources>
+</document>

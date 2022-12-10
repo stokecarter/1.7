@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProText-Semibold.ttf">
+            <string>SFProText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="565" id="KGk-i7-Jjw" customClass="GuestDummy" customModule="Stoke" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="371" height="565"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="371" height="565"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mlf-zQ-IpH">
+                        <rect key="frame" x="0.0" y="0.0" width="371" height="565"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZwD-n0-GVq" customClass="AppButton" customModule="Stoke" customModuleProvider="target">
+                                <rect key="frame" x="28" y="492" width="315" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="eB5-fb-Apn"/>
+                                </constraints>
+                                <state key="normal" title="Login/Signup"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_following_chatroom_graphic" translatesAutoresizingMaskIntoConstraints="NO" id="zPw-JD-dA7">
+                                <rect key="frame" x="40" y="105" width="291" height="242"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6iX-9m-opV">
+                                <rect key="frame" x="28" y="365" width="315" height="38.5"/>
+                                <string key="text" base64-UTF8="YES">
+VG8gdmlldyBGb2xsb3dpbmcgQ2hhdHJvb20LcGxlYXNlIGxvZ2luIGZpcnN0A
+</string>
+                                <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZwD-n0-GVq" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6iX-9m-opV" secondAttribute="bottom" constant="20" id="0Co-Hs-q1r"/>
+                            <constraint firstItem="zPw-JD-dA7" firstAttribute="centerY" secondItem="mlf-zQ-IpH" secondAttribute="centerY" multiplier="0.8" id="4lD-Jr-7B3"/>
+                            <constraint firstAttribute="trailing" secondItem="ZwD-n0-GVq" secondAttribute="trailing" constant="28" id="F6H-Lk-hrU"/>
+                            <constraint firstItem="zPw-JD-dA7" firstAttribute="leading" secondItem="mlf-zQ-IpH" secondAttribute="leading" constant="40" id="LsD-UD-AIC"/>
+                            <constraint firstAttribute="trailing" secondItem="zPw-JD-dA7" secondAttribute="trailing" constant="40" id="QUf-0N-Vzo"/>
+                            <constraint firstItem="zPw-JD-dA7" firstAttribute="centerX" secondItem="mlf-zQ-IpH" secondAttribute="centerX" id="QV2-ku-5BM"/>
+                            <constraint firstAttribute="trailing" secondItem="6iX-9m-opV" secondAttribute="trailing" constant="28" id="TaE-vQ-Kwd"/>
+                            <constraint firstItem="6iX-9m-opV" firstAttribute="top" secondItem="zPw-JD-dA7" secondAttribute="bottom" constant="18" id="bHY-Xg-o6l"/>
+                            <constraint firstAttribute="bottom" secondItem="ZwD-n0-GVq" secondAttribute="bottom" constant="28" id="bnJ-KW-fqd"/>
+                            <constraint firstItem="6iX-9m-opV" firstAttribute="leading" secondItem="mlf-zQ-IpH" secondAttribute="leading" constant="28" id="fCR-9J-EBb"/>
+                            <constraint firstItem="ZwD-n0-GVq" firstAttribute="leading" secondItem="mlf-zQ-IpH" secondAttribute="leading" constant="28" id="tXt-ao-NAH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mlf-zQ-IpH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="0rZ-mK-Ivk"/>
+                    <constraint firstAttribute="trailing" secondItem="mlf-zQ-IpH" secondAttribute="trailing" id="5Rn-dm-hzb"/>
+                    <constraint firstAttribute="bottom" secondItem="mlf-zQ-IpH" secondAttribute="bottom" id="jEA-Fm-cUG"/>
+                    <constraint firstItem="mlf-zQ-IpH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ugg-cy-Ke1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="164.49275362318841" y="202.56696428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_following_chatroom_graphic" width="296" height="242"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

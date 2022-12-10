@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HorizontalGridCVCell" customModule="Stoke" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="235" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="235" height="155"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qaP-58-1Mk">
+                        <rect key="frame" x="0.0" y="0.0" width="220" height="146.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="qaP-58-1Mk" secondAttribute="height" multiplier="15/10" id="WGt-K5-9qB"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b85-o8-AGP">
+                        <rect key="frame" x="16" y="114" width="199" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="qaP-58-1Mk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="M0R-Ik-tiW"/>
+                <constraint firstItem="b85-o8-AGP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="if9-SP-3f9"/>
+                <constraint firstAttribute="trailing" secondItem="b85-o8-AGP" secondAttribute="trailing" constant="20" id="o5D-PI-DAo"/>
+                <constraint firstItem="qaP-58-1Mk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qdP-5B-h7f"/>
+                <constraint firstItem="b85-o8-AGP" firstAttribute="bottom" secondItem="qaP-58-1Mk" secondAttribute="bottom" constant="-12" id="yCS-oS-7LL"/>
+                <constraint firstAttribute="trailing" secondItem="qaP-58-1Mk" secondAttribute="trailing" constant="15" id="yFg-d3-oIp"/>
+            </constraints>
+            <size key="customSize" width="235" height="155"/>
+            <connections>
+                <outlet property="imView" destination="qaP-58-1Mk" id="hbX-hB-CE9"/>
+                <outlet property="titleLabel" destination="b85-o8-AGP" id="3wg-LT-F7D"/>
+            </connections>
+            <point key="canvasLocation" x="113.768115942029" y="138.95089285714286"/>
+        </collectionViewCell>
+    </objects>
+</document>

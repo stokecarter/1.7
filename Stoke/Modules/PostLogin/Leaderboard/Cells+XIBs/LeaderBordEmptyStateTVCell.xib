@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProText-Semibold.ttf">
+            <string>SFProText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="LeaderBordEmptyStateTVCell" rowHeight="310" id="KGk-i7-Jjw" customClass="LeaderBordEmptyStateTVCell" customModule="Stoke" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="471" height="310"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="471" height="310"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-exclamation-black" translatesAutoresizingMaskIntoConstraints="NO" id="34s-dn-fj0">
+                        <rect key="frame" x="175.5" y="95" width="120" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="A6o-T1-CWk"/>
+                            <constraint firstAttribute="width" secondItem="34s-dn-fj0" secondAttribute="height" id="PKN-P8-lhf"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Most Claps Available" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hke-14-EoC">
+                        <rect key="frame" x="141" y="240" width="189" height="45"/>
+                        <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="34s-dn-fj0" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="BMY-Ua-cXX"/>
+                    <constraint firstItem="hke-14-EoC" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Rku-Yb-WtP"/>
+                    <constraint firstAttribute="bottom" secondItem="hke-14-EoC" secondAttribute="bottom" constant="25" id="Zrf-MC-ZrT"/>
+                    <constraint firstItem="34s-dn-fj0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="kTX-p6-rXg"/>
+                    <constraint firstItem="hke-14-EoC" firstAttribute="top" secondItem="34s-dn-fj0" secondAttribute="bottom" constant="25" id="to1-4R-cyY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="headingLabel" destination="hke-14-EoC" id="O0c-p8-Grb"/>
+                <outlet property="iconImageView" destination="34s-dn-fj0" id="aNm-j5-TEa"/>
+            </connections>
+            <point key="canvasLocation" x="247.10144927536234" y="178.79464285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic-exclamation-black" width="52" height="70.5"/>
+    </resources>
+</document>
